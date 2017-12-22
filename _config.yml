@@ -22,17 +22,17 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: "wangruinju@gmail.com" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
-  facebook:
+  facebook: wangruinju
   flickr:
   gitlab:
-  github: "rohanchandra/type-theme"
+  github: "wangruinju"
   google_plus:
-  instagram:
-  linkedin:  # Full URL
+  instagram: 
+  linkedin: "https://www.linkedin.com/in/wangruinju/" # Full URL
   pinterest:
   reddit:
   soundcloud:
