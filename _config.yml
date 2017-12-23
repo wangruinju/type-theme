@@ -6,7 +6,7 @@ url: "https://wangruinju.github.io/"
 theme_settings:
   # Meta
   title: Rui Wang
-  avatar: assets/img/avatar.png
+  avatar: assets/img/my_pic.png?raw=true
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
