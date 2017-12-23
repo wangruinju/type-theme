@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/sub-directory"
+baseurl: ""
 url: "https://wangruinju.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
