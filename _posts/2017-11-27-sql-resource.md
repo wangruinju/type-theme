@@ -52,8 +52,8 @@ The following is my solution for Leetcode problems. Some of them are really trea
 
 SQL is very easy to forget if you don't pratice it every day. The following are the websites I always looked it up especially like window functions and update or delete operations.
 
->https://www.w3schools.com/SQl/default.asp
+>[W3schools](https://www.w3schools.com/SQl/default.asp)
 
->http://www.sqlite.org/cli.html
+>[Command Line Shell For SQLite](http://www.sqlite.org/cli.html)
 
->http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html
+>[Database System Concepts](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html)
