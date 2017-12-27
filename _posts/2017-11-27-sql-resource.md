@@ -14,6 +14,8 @@ Before I had hands-on experience of MySQL and PostgreSQL on cloud services, I we
 
 * [Vertabelo Academy SQL module](https://academy.vertabelo.com/)
 
+**Estimated time: 4 hours for each module**
+
 This is the best platform I would recommend it first. After registration, you can learn SQL from several modules like basics, creating tables and window functions. It explained well how to apply SQL in the real cases. What's more, it provided online practices and good hints. Each module contains a lot of exercises and you really built up your confidence of learning step by step. The following is what I have learned from this platform.
 
 >SQL Basics (100% completed, 129/129)
@@ -27,6 +29,8 @@ This is the best platform I would recommend it first. After registration, you ca
 >Window Functions (100% completed, 218/218)
 
 * [Intro to Database](https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about)
+
+**Estimated time: 8 hours**
 
 This is a mini course of Intro to Database from Stanford online course. By the time, I did not review the complete course. If you have enough time, I would recommend you to go through it. It will give you a comprehensive understanding of databases including SQL and non-SQL. For mini course of SQL, I personally like homework every time you learned some functions about SQL. The homework is based on a network context (friend network like Facebook). I have posted my solution on the Github if you need a hand.
 
