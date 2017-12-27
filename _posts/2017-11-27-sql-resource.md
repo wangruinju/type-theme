@@ -30,26 +30,26 @@ This is the best platform I would recommend it first. After registration, you ca
 
 This is a mini course of Intro to Database from Stanford online course. By the time, I did not review the complete course. If you have enough time, I would recommend you to go through it. It will give you a comprehensive understanding of databases including SQL and non-SQL. For mini course of SQL, I personally like homework every time you learned some functions about SQL. The homework is based on a network context (friend network like Facebook). I have posted my solution on the Github if you need a hand.
 
-[My Practice](https://github.com/wangruinju/SQL_Resources/blob/master/Stanford%20SQL%20practice/SQL%20exercise.Rmd)
+>[My Practice](https://github.com/wangruinju/SQL_Resources/blob/master/Stanford%20SQL%20practice/SQL%20exercise.Rmd)
 
 # Online Judgement
 
 After completing the courses above, it is time to test yourself at two popular online judgement platforms.
 
-*[Hackerrank](https://www.hackerrank.com/)
+>[Hackerrank](https://www.hackerrank.com/)
 
-*[Leetcode DataBase](https://leetcode.com/problemset/database/)
+>[Leetcode DataBase](https://leetcode.com/problemset/database/)
 
 The following is my solution for Leetcode problems. Some of them are really treaky. If you find yourself struggling, don't be frustrated and just learn from the posted dicussion. After you review many times, you will finally get the tricks.
 
-[My Practice](https://github.com/wangruinju/SQL_Resources/blob/master/Leetcode%20SQL%20practice/SQL.md)
+>[My Practice](https://github.com/wangruinju/SQL_Resources/blob/master/Leetcode%20SQL%20practice/SQL.md)
 
 # Resources for Look-up
 
 SQL is very easy to forget if you don't pratice it every day. The following are the websites I always looked it up especially like window functions and update or delete operations.
 
-https://www.w3schools.com/SQl/default.asp
+>https://www.w3schools.com/SQl/default.asp
 
-http://www.sqlite.org/cli.html
+>http://www.sqlite.org/cli.html
 
-http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html
+>http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html
