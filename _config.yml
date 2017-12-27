@@ -5,8 +5,8 @@ url: "https://wangruinju.github.io/"
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
-  avatar: assets/img/avatar.png
+  title: Rui Wang
+  avatar: assets/img/my_pic.png?raw=true
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
@@ -15,7 +15,7 @@ theme_settings:
   header_text: >
      <p>Every day I remind myself that my inner and outer life are based on the labors of other men, living and dead, and that I must exert myself in order to give in the same measure as I have received and am still receiving.</p>
 
-     <p>--― Albert Einstein, The World As I See It</p>
+     <p>― Albert Einstein, The World As I See It</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
@@ -39,7 +39,7 @@ theme_settings:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: "Reid_Wang"
   wordpress:
   youtube:
 
