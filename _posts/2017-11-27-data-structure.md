@@ -1,28 +1,26 @@
 ---
 layout: post
-title: Data Structure (Draft)
+title: Data Structure
 tags: [data-science, leetcode]
 ---
 
-Before I decided to make data science as my career goal, I was Physics PhD who did a lot of tool operations and optical measurements. Coding is not a daily work for me. I want to introduce a little bit about my background and encourage people who have the same backgroud like me or is a new learner in data structure. Before learning data structure, I have known some basic knowlege about Matlab and C. I used Matlab to visualize 2D electronic signal in my daily PhD life. When I was freshman at Nanjing University, I had a really bad experience of learning C langurange and wasted a lot of time debuging the synatax. Anyway, I was new to data structure before 2017 spring. 
+Before I decided to set data science as my career goal, I was a Physics PhD who did a lot of tool operations and optical measurements in semiconducting field. Coding was not a daily work for me. Here I introduced a little about my background to encourage people with a similar background or just as new learners in coding. Before learning data structure, I have known some basic knowledge about Matlab and C. I used Matlab to visualize two-dimensional electronic signal in the experiments. When freshman at Nanjing University, I had a really bad experience of learning C langurange and wasted a lot of time just debuging the synatax. Anyway, I was new to data structure before 2017 spring. 
 
-Therefore, there is no hard thing until you enter that comfortable zone. The following is my learning experience of data structure. Still thanks to Zhijun Yin and Lingjun Fu, I learn a lot from them about where to start learning Python. Python has gained great attention in the data science field since 2016 and have a trend over R recently. For people who want to learn some resources about R, I will update it in other blogs.
+Therefore, there is no hard thing until you leave the comfortable zone. Thanks to Zhijun Yin and Lingjun Fu, I learned a lot from them about where to learn Python. Python has gained great attention in the data science field since 2016 and has a trend over R recently. For people who want to learn some resources about R, I will update it in the blogs later.
 
 # Online Courses
-
-There are many online resources in MOOC and open courses. 
 
 * [Google 3-Day Python](https://developers.google.com/edu/python/)
 
 **Estimated time: 6 hours**
 
-The first I would recommend is the Google Python education. It allows you to get familar with Python in a few class and have some hands-on experience. Here you will learn basic knowledge about string, list, set, dict and some re expressions. The homework is also great to give a try. 
+The first I would recommend is the Google Python education. It allows you to get familar with Python in a few class and have some hands-on experience. Here you will learn some basic knowledge about string, list, set, dict and re-expressions. The homework is also great to give a try. 
 
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
 **Estimated time: unknown**
 
-Another great resourse is learn Python the hard way. I learn about how to print your results using Python. If you are familar with this part, you can skip it.
+Another great resourse is to follow "learn Python the hard way". I learned about how to print your results using Python. If you are familar with this part, you can skip it.
 
 * [MIT Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/)
 
@@ -30,9 +28,9 @@ Another great resourse is learn Python the hard way. I learn about how to print 
 
 **Estimated time: one month**
 
-I personally dive deep into the algorithm from this amazing course. Many thanks to MIT open courses. In this course, the lecturers wrote everything on the blackboard, allowing you to **taking notes** while listening. You can skip some parts if you feel like that you will never use them. You can take the following Leetcode topics as reference.
+Many thanks to MIT open courses like data structure, probability and quantitative finance, I could dive deep into the algorithm and benefit a lot from that. In this course, the lecturers wrote everything on the blackboard, allowing you to **taking notes** while listening. You can skip some parts if you feel like that you will never use them. I suggested you can follow Leetcode topics below as a reference.
 
-A good tip to learn some data struture is to follow some simple cases and write results in each loop or opreation on the while/black board or draft papers. After you understand the simple case many times, you will naturally get what is the essence of this algorithm. Also, please feel free to search any short video in Youtube. The following link is my favorite lecturer in India, who gave a very good explaination of each data structure.
+A good tip is to follow some simple cases and write results in each loop or opreation on the while/black board or draft papers. After you understand the simple case many times, you will naturally get what the essence of this algorithm is. Also, please feel free to search any short video in Youtube. The following is my favorite lecturer from India, who gave a very good explaination of each data structure.
 
 >[Lectures by Ravindrababu Ravula](https://www.youtube.com/watch?v=aGjL7YXI31Q&list=PLEbnTDJUr_IeHYw_sfBOJ6gk5pie0yP-0)
 
@@ -40,7 +38,7 @@ A good tip to learn some data struture is to follow some simple cases and write 
 
 **Estimated time: one month**
 
-This is a fatastic book about Python data structure. I highly recommended for programming beginners. I would like to repeat the codes in the book and have a better understanding of each algorithm like sorting in the array or various transverse methods in the tree.
+This is a fatastic book about Python data structure. I highly recommended it for programming beginners. If you learn some data structures in the first time like me, I suggest you to repeat the codes in the book and have a better understanding of each algorithm like sorting in the array or various transverse methods in the tree.
 
 # [Leetcode](leetcode.com)
 
