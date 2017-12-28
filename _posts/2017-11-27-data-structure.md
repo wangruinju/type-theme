@@ -4,8 +4,6 @@ title: Data Structure (Draft)
 tags: [data-science, leetcode]
 ---
 
-# Motivation
-
 Before I decided to make data science as my career goal, I was Physics PhD who did a lot of tool operations and optical measurements. Coding is not a daily work for me. I want to introduce a little bit about my background and encourage people who have the same backgroud like me or is a new learner in data structure. Before learning data structure, I have known some basic knowlege about Matlab and C. I used Matlab to visualize 2D electronic signal in my daily PhD life. When I was freshman at Nanjing University, I had a really bad experience of learning C langurange and wasted a lot of time debuging the synatax. Anyway, I was new to data structure before 2017 spring. 
 
 Therefore, there is no hard thing until you enter that comfortable zone. The following is my learning experience of data structure. Still thanks to Zhijun Yin and Lingjun Fu, I learn a lot from them about where to start learning Python. Python has gained great attention in the data science field since 2016 and have a trend over R recently. For people who want to learn some resources about R, I will update it in other blogs.

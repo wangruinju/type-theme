@@ -4,8 +4,6 @@ title: SQL resources
 tags: [data-science, SQL]
 ---
 
-# Motivation
-
 I started to learn SQL from applying a summer internship and got a lot of exercises at AxialHealthcare. Briefly, for feature development regarding opioid use disorder, opioid addition and opioid relapse, I first read a lot of medical papers, then applied these domain knowledge and built well-established models, finally extracted the data from the database from GC and AWS. The post analysis is through Python or R. For geographic data, I visualized it in Tableau.
 
 Before I had hands-on experience of MySQL and PostgreSQL on cloud services, I went through several good online courses. Thanks to Lingjun Fu and Chaochen You, they gave me a lot of insights about where to rock SQL learning.
