@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Probability and Statistics (Draft)
+title: Probability and Statistics Study
 tags: [data-science, probability]
 ---
 
@@ -44,4 +44,4 @@ You can find the corresponding [video list](https://www.youtube.com/playlist?lis
 
 >[Nathan's Summary based on "Paul Wilmott on Quantitative Finance, 2nd Edition"](https://www.youtube.com/playlist?list=PL8DC1113ADB63358E)
 
-# To Be Continued
+To be continued (Linear regression)

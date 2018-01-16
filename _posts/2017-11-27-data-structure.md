@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Structure
+title: Data Structure Study
 tags: [data-science, leetcode]
 ---
 

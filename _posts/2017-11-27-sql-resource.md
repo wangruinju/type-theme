@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL resources
+title: SQL Study
 tags: [data-science, SQL]
 ---
 
