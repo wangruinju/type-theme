@@ -42,10 +42,10 @@ Open-minded and highly motivated individual with 6 years of extensive experience
 
 ## PROJECTS
 
-*Kaggle Competition Expert (Top 3%) 2017-2018*
+*[Kaggle Competition Expert](https://www.kaggle.com/wangruinju) (Top 3%) 2017-2018*
 
-+ Mercari Price Suggestion Challenge, Silver Medal (top 4%) | Price prediction based on descriptions of 2M+ shopping products at Mercari.com using NLP, ridge regression and LightGBM methods
-+ Porto Seguro’s Safe Driver Insurance, Bronze Medal (top 7%) | Claim prediction targeted for 1M+ imbalanced user data utilizing feature engineering and stacked models of XGboost and neural network
++ Mercari Price Suggestion Challenge, Silver Medal (top 4%): Price prediction based on descriptions of 2M+ shopping products at Mercari.com using NLP, ridge regression and LightGBM methods
++ Porto Seguro’s Safe Driver Insurance, Bronze Medal (top 7%): Claim prediction targeted for 1M+ imbalanced user data utilizing feature engineering and stacked models of XGboost and neural network
 + Recruit Restaurant Visitor Forecasting, Bronze Medal (top 6%)
 + Nomad2018 Predicting Transparent Conductors (top 6%)
 
