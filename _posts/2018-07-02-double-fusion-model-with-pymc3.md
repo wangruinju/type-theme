@@ -62,7 +62,7 @@ $$Y_{cv}(t) = \beta_c + b_{c}(v) + d_c + \epsilon_{cv}(t)$$
 
 In the formula above, $\beta_c$ is the grand mean in the ROI $c$. $b_c(v)$ represents a zero mean voxel-specific random effect in the ROI $c$ and captures the local spatial dependency between voxels. A kernel function $K_c(v, v')$ is defined as the covariance structure for local spatial covariance. It is a function of Euclidean distance:
 
-$$Cov(b_c(v), b_c(v')) = K_c(||v-v'||)$$
+$$Cov(b_c(v), b_c(v')) = K_c(\norm{-v-v'})$$
 
 Note that the voxel-specific random effect $b$ values are uncorrelated when two voxels correspond to different ROIs ($c \neq c'$), which means the expression below:
 
@@ -70,9 +70,9 @@ $$Cov(b_c(v), b_c(v')) = 0 \text{ at } c \neq c'$$
 
 This kernel function can be any valid spatial covariance function. In our model, we apply the exponential function to represent the covariance structure between voxels:
 
-$$Cov(b_c(v), b_c(v')) = \sigma_{b_c}^2exp(-||v-v'||/\psi_c)$$
+$$Cov(b_c(v), b_c(v')) = \sigma_{b_c}^2exp(\norm{-v-v'}/\psi_c)$$
 
-where $\sigma_{b_c}^2$ is defined as the spatial variance at each voxel in the ROI $c$ and $||v-v'||$ denotes the Euclidean distance between two voxels, $c$ and $c'$. $\psi_c$ represents the ROI-specific decaying parameter in the exponential structure.
+Here $\sigma_{b_c}^2$ is defined as the spatial variance at each voxel in the ROI $c$ and $\norm{-v-v'}$ denotes the Euclidean distance between two voxels, $c$ and $c'$. $\psi_c$ represents the ROI-specific decaying parameter in the exponential structure.
 
 $d_c$ is a zero-mean ROI-specific random effect. Its covariance structure is used to model functional connectivity and expressed as $Cov(b_c(v), b_c(v'))$. We will explain how this effect results from naive FC and DTI data with a series of prior information. 
 
@@ -80,7 +80,7 @@ Finally, $\epsilon_{cv}(t)$ is the noise part. We assume this voxel-specific noi
 
 $$\epsilon_{cv}(t)=\delta_c + \phi_{cv}\epsilon_{cv}(t-1)+w(t)$$
 
-where $\delta_c$ is the constant shift, $\phi_{cv}$ is the AR (1) coefficient with a requirement of $|\phi_{cv}| < 1$. And $w(t)$ is Gaussian random noise with a distribution as $N(0, \sigma_{cv}^2)$ and is independent of $\epsilon_{cv}(t)$. It is straightforward to calculate the mean and variance of $\epsilon_{cv}(t)$ as the following:
+Here $\delta_c$ is the constant shift, $\phi_{cv}$ is the AR (1) coefficient with a requirement of $|\phi_{cv}| < 1$. And $w(t)$ is Gaussian random noise with a distribution as $N(0, \sigma_{cv}^2)$ and is independent of $\epsilon_{cv}(t)$. It is straightforward to calculate the mean and variance of $\epsilon_{cv}(t)$ as the following:
 
 $$E[\epsilon_{cv}(t)] = \frac{\delta_c}{1-\phi_{cv}}$$
 
