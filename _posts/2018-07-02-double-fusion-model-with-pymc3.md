@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bayesian Modeling Using PyMC3
-tags: [data-science]
+tags: [statistical-modeling]
 ---
 
 Thanks to the fantastic course ([BIOS 8366: advanced statistical computing](https://github.com/fonnesbeck/Bios8366)) taught by Dr. Fonnesbeck Christopher, 
