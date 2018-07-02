@@ -16,5 +16,3 @@ It covers the following aspects:
     - Data Structure Using Python
 - Machine Learning
 - Case Studies
-
-I am also aiming to write a Gitbooks in the future. Please check my blog updates.
