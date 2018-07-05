@@ -4,8 +4,9 @@ title: Bayesian Modeling Using PyMC3
 tags: [statistical-modeling]
 ---
 
-Thanks to the fantastic course ([BIOS 8366: advanced statistical computing](https://github.com/fonnesbeck/Bios8366)) taught by Dr. Fonnesbeck Christopher, 
-I have completed the biostatistics M.S. thesis under the instructions of Dr. Hakmook Kang.
+Thanks to the fantastic course ([BIOS 8366: advanced statistical computing](https://github.com/fonnesbeck/Bios8366)) taught by Dr. Fonnesbeck Christopher, I have completed the biostatistics M.S. thesis under the instructions of Dr. Hakmook Kang.
+
+You can read the [Readme](https://htmlpreview.github.io/?https://github.com/wangruinju/Double-Fusion/blob/master/README.html) in HTML and [slides](https://github.com/wangruinju/Double-Fusion/blob/master/slides.pdf). 
 
 # [Double-Fusion](https://github.com/wangruinju/Double-Fusion)
 
@@ -53,6 +54,5 @@ python model.py
 
 We also add some examples using CPU/GPU on Vanderbilt Advanced Computing Center for Research and Education (ACCRE).
 
-# Modeling
 
-You can preview the [Readme](https://htmlpreview.github.io/?https://github.com/wangruinju/Double-Fusion/blob/master/README.html) file in HTML format. 
+
