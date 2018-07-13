@@ -11,7 +11,7 @@ Open-minded and highly motivated individual with 6 years of extensive experience
 
 **Vanderbilt University, Nashville, TN** 2012-2018     
 
-+ Ph.D. in Physics and M.S. in Biostatistics  
++ Ph.D. & M.A. in Physics and M.S. in Biostatistics  
 
 **Nanjing University, Nanjing, China** 2008-2012                                        
 
