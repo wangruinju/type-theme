@@ -6,6 +6,8 @@ tags: [statistical-modeling, neuroscience]
 
 Thanks to the fantastic course ([BIOS 8366: advanced statistical computing](https://github.com/fonnesbeck/Bios8366)) taught by Dr. Fonnesbeck Christopher, I have completed the biostatistics M.S. thesis under the instructions of Dr. Hakmook Kang. You can read the [Readme](https://htmlpreview.github.io/?https://github.com/wangruinju/Double-Fusion/blob/master/README.html) in HTML and [slides](https://github.com/wangruinju/Double-Fusion/blob/master/slides.pdf). 
 
+![model]({{ "/assets/img/spatial_temporal_model.png"}})
+
 # [Double-Fusion](https://github.com/wangruinju/Double-Fusion)
 
 The thesis work is mainly focused on the modeling part, which is used to explain the model in the papar by Kang, Hakmook, et al. "[A bayesian double fusion model for resting-state brain connectivity using joint functional and structural data](https://www.liebertpub.com/doi/abs/10.1089/brain.2016.0447)." Brain connectivity 7.4 (2017): 219-227.
