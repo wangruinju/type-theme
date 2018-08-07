@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bayesian Modeling Using PyMC3
-tags: [statistical-modeling]
+tags: [statistical-modeling, neuroscience]
 ---
 
 Thanks to the fantastic course ([BIOS 8366: advanced statistical computing](https://github.com/fonnesbeck/Bios8366)) taught by Dr. Fonnesbeck Christopher, I have completed the biostatistics M.S. thesis under the instructions of Dr. Hakmook Kang. You can read the [Readme](https://htmlpreview.github.io/?https://github.com/wangruinju/Double-Fusion/blob/master/README.html) in HTML and [slides](https://github.com/wangruinju/Double-Fusion/blob/master/slides.pdf). 
