@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Novel Graphene Sensors for Recording Electrical Activities of Individual Synapses
+title: Novel Graphene Sensors for Neuronal Recording
 tags: [physical-engineering, neuroscience]
 ---
 
