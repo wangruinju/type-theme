@@ -5,7 +5,9 @@ permalink: /about/
 feature-img: "assets/img/sample_feature_img_2.png"
 ---
 
-Open-minded and highly motivated individual with 6 years of extensive experience in data analysis, model-building and quantitative research. Outstanding analytical skills and hands-on knowledge in statistics, machine/deep learning, NLP, mathematics and physics. Demonstrated interdisciplinary background, strong collaboration skills, active publication record, and keen adaptability to new fields.
+**Current Focus** Artificial Intelligence, Machine Learning, Statistical Modeling, Data Science and Natural Language Processing
+
+Previous Focus: Physical Engineering, Healthcare, Nanomaterial and  Neuroscience.
 
 ## WORK
 
