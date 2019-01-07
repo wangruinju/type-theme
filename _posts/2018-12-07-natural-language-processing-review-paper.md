@@ -1,3 +1,9 @@
+---
+layout: post
+title: Natural Language Processsing Review Paper
+tags: [NLP, machine-learning]
+---
+
 These are my listed presentations at our internal journal club at Standardization Team, Relevance, LinkedIn.
 
 - Paper 1
