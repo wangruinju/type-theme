@@ -4,7 +4,7 @@ title: Basic Machine Learning Algorithms
 tags: [NLP, machine-learning]
 ---
 
-Today I will share three basic machine learning algorithms, which are commonly asked in machine learning interviews: 
+Today I will share 4 basic machine learning algorithms, which are commonly asked in machine learning interviews: 
 
 1. **KMeans**
 2. **K Nearest Neighbors (KNN)**
