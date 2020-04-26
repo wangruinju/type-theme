@@ -4,7 +4,12 @@ title: Basic Machine Learning Algorithms
 tags: [NLP, machine-learning]
 ---
 
-Today I will share three basic machine learning algorithms, which are commonly asked in machine learning interviews: KMeans, KNN and Native Bayes. 
+Today I will share three basic machine learning algorithms, which are commonly asked in machine learning interviews: 
+
+1. **KMeans**
+2. **K Nearest Neighbors (KNN)**
+3. **Native Bayes** 
+4. **Gradient Boosting Decision Tree (GBDT)**.
 
 - [KMeans](https://en.wikipedia.org/wiki/K-means_clustering)
 
@@ -66,7 +71,7 @@ kmeans.fit(X)
 print(kmeans.inertia_)
 ```
 
-- [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+- [K Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 
 TODO: add explanation and follow up (pro and cons)
 
@@ -172,4 +177,61 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25)
 nb = GaussianNB().fit(X_train, y_train)
 print(nb.score(X_train, y_train))
 print(nb.score(X_test, y_test))
+```
+
+- [Gradient Boosting Decision Tree](https://en.wikipedia.org/wiki/Gradient_boosting)
+
+TODO: add explanation and follow up (pro and cons)
+
+Python Code Implementation
+```python
+from sklearn.datasets import load_boston
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+class GBDT:
+    
+    def __init__(self, max_iter = 50, learning_rate = 0.1):
+        self.max_iter = max_iter
+        self.learning_rate = learning_rate
+        self.f0 = None
+        self.regressors = []
+        
+    def compute_loss(self, y, y_hat):
+        # mse square loss
+        return ((y-y_hat)**2)/2
+    
+    def loss_gradient(self, y, y_hat):
+        return -(y-y_hat)
+    
+    def fit(self, X, y):
+        y_hat = np.array([y.mean()]*len(y))
+        self.f0 = y_hat
+        print(self.compute_loss(y, y_hat).mean())
+        for i in range(self.max_iter):
+            residuals = -self.loss_gradient(y, y_hat)
+            regressor = DecisionTreeRegressor(max_depth=1)
+            regressor.fit(X, residuals)
+            self.regressors.append(regressor)
+            predictions = regressor.predict(X)
+            y_hat = y_hat + self.learning_rate * predictions
+            print(self.compute_loss(y, y_hat).mean())
+        return self
+    
+    def predict(self, X):
+        y_hat = np.array([self.f0[0]]*len(X))
+        for regressor in self.regressors:
+            y_hat = y_hat + self.learning_rate * regressor.predict(X)
+        return y_hat
+
+
+gbdt = GBDT(max_iter = 300, learning_rate = 0.05)
+boston = load_boston()
+X = boston.data
+y = boston.target
+X_train, X_test, y_train, y_test = train_test_split(X, y)
+gbdt.fit(X_train, y_train)
+y_hat = gbdt.predict(X_test)
+print(np.sum((y_test-y_hat)**2)/len(y_test))
 ```
