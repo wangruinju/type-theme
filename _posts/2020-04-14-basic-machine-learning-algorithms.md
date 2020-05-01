@@ -4,12 +4,80 @@ title: Basic Machine Learning Algorithms
 tags: [NLP, machine-learning]
 ---
 
-Today I will share 4 basic machine learning algorithms, which are commonly asked in machine learning interviews: 
+Today I will share 5 basic machine learning algorithms, which are commonly asked in machine learning interviews: 
 
-1. **KMeans**
-2. **K Nearest Neighbors (KNN)**
-3. **Native Bayes** 
-4. **Gradient Boosting Decision Tree (GBDT)**.
+1. **Logistic Regression**
+2. **KMeans**
+3. **K Nearest Neighbors (KNN)**
+4. **Native Bayes** 
+5. **Gradient Boosting Decision Tree (GBDT)**
+
+- [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression)
+
+TODO: add explanation and follow up (pro and cons)
+
+Python Code Implementation
+```python
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn import datasets
+
+class LogisticRegression:
+
+    def __init__(self, learning_rate=0.01, num_iter=1000, fit_intercept=True, verbose=False):
+        self.learning_rate = learning_rate
+        self.num_iter = num_iter
+        self.fit_intercept = fit_intercept
+        self.verbose = verbose
+
+    def add_intercept(self, X):
+        intercept = np.ones((X.shape[0], 1))
+        return np.concatenate((intercept, X), axis=1)
+
+    def sigmoid(self, z):
+        return 1 / (1 + np.exp(-z))
+    
+    def loss(self, h, y):
+        return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
+
+    def fit(self, X, y):
+        if self.fit_intercept:
+            X = self.add_intercept(X)
+        
+        # weights initialization
+        self.theta = np.zeros(X.shape[1])
+        
+        for i in range(self.num_iter):
+            z = np.dot(X, self.theta)
+            h = self.sigmoid(z)
+            gradient = np.dot(X.T, (h - y)) / y.size
+            self.theta -= self.learning_rate * gradient
+            
+            if self.verbose == True and i % 10000 == 0:
+                z = np.dot(X, self.theta)
+                h = self.sigmoid(z)
+                print("loss: %f" % {self.loss(h, y)})
+
+    def predict_prob(self, X):
+        if self.fit_intercept:
+            X = self.add_intercept(X)
+
+        return self.sigmoid(np.dot(X, self.theta))
+
+    def predict(self, X, threshold = 0.5):
+        return self.predict_prob(X) >= threshold
+    
+    def score(self, X, y, threshold = 0.5):
+        return (self.predict(X, threshold) == y).mean()
+    
+iris = datasets.load_iris()
+X, y = iris.data, (iris.target != 0)*1
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25)
+lr = LogisticRegression()
+lr.fit(X_train, y_train)
+print(lr.score(X_train, y_train))
+print(lr.score(X_test, y_test))
+```
 
 - [KMeans](https://en.wikipedia.org/wiki/K-means_clustering)
 
