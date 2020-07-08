@@ -14,8 +14,6 @@ Today I will share 5 basic machine learning algorithms, which are commonly asked
 
 - [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression)
 
-TODO: add explanation and follow up (pro and cons)
-
 Python Code Implementation
 ```python
 import numpy as np
@@ -81,8 +79,6 @@ print(lr.score(X_test, y_test))
 
 - [KMeans](https://en.wikipedia.org/wiki/K-means_clustering)
 
-TODO: add explanation and follow up (pro and cons)
-
 Python Code Implementation
 ```python
 import numpy as np
@@ -140,8 +136,6 @@ print(kmeans.inertia_)
 ```
 
 - [K Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
-
-TODO: add explanation and follow up (pro and cons)
 
 Python Code Implementation
 ```python
@@ -207,9 +201,75 @@ print(neighbor.score(X_validation, y_validation))
 
 - [Native Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
 
-TODO: add explanation and follow up (pro and cons)
-
 Python Code Implementation
+
+One is for Native Bayes in text/spam classification. Here we add Laplace smoothing (check CS229 for details).
+
+```python
+import collections
+impor math
+
+class NB:
+
+    def __init__(self):
+        self.num_messages = {}
+        self.log_class_priors = {}
+        self.vocab = set()
+        self.labels = set()
+        self.word_counts = collections.defualtdict(lambda: collections.Counter())
+
+    def clean(self, s):
+       translator = str.maketrans("", "", string.punctuation)
+       return s.translate(translator)
+
+   def tokenize(self, text):
+       text = self.clean(text).lower()
+       return re.split("\W+", text)
+           
+    def fit(self, X, y):
+        n = len(y)
+        self.labels = set(y)
+        self.num_messages[label] = collections.Counter(y)
+        for label in self.labels:
+            self.log_class_priors[label] = 1.0 * self.num_messages[label] / n
+        
+        for x, label in zip(X, y):
+            tokens = self.tokenize(x)
+            counts = collections.Counter(tokens)
+            for word, count in counts.items():
+                self.vocab.add(word)
+                self.word_counts[label][word] += count
+        return self
+
+    def predict(self, X):
+        res = []
+        for x in X:
+            tokens = self.tokenize(x)
+            counts = collections.Counter(tokens)
+            score = collections.defaultdict(float)
+
+            for word, _ in counts.items():
+                if word not in self.vocab:
+                    continue
+                
+                # add Laplace smoothing
+                for label in self.labels:
+                    score[label] += math.log( (self.word_counts[label][word] + 1) / (self.num_messages[label] + len(self.vocab)))
+
+            # add prior
+            for label in self.labels:
+                score[label] += self.log_class_priors[label]
+    
+            res.append(max(score, key = score.get))
+        
+        return res
+        
+    def score(self, X, y):
+        return sum(self.predict(x) == label for x, label in zip(X, y)) / len(y)
+```
+
+Another is for Gaussian Native Bayes, which assumes a normal distribution for the likelihood.
+
 ```python
 import numpy as np 
 from sklearn.model_selection import train_test_split
@@ -248,8 +308,6 @@ print(nb.score(X_test, y_test))
 ```
 
 - [Gradient Boosting Decision Tree](https://en.wikipedia.org/wiki/Gradient_boosting)
-
-TODO: add explanation and follow up (pro and cons)
 
 Python Code Implementation
 ```python
