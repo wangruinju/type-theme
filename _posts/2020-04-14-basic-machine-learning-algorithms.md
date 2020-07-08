@@ -219,12 +219,12 @@ class NB:
         self.word_counts = collections.defualtdict(lambda: collections.Counter())
 
     def clean(self, s):
-       translator = str.maketrans("", "", string.punctuation)
-       return s.translate(translator)
+        translator = str.maketrans("", "", string.punctuation)
+        return s.translate(translator)
 
-   def tokenize(self, text):
-       text = self.clean(text).lower()
-       return re.split("\W+", text)
+    def tokenize(self, text):
+        text = self.clean(text).lower()
+        return re.split("\W+", text)
            
     def fit(self, X, y):
         n = len(y)
