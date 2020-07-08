@@ -207,7 +207,7 @@ One is for Native Bayes in text/spam classification. Here we add Laplace smoothi
 
 ```python
 import collections
-impor math
+import math
 
 class NB:
 
@@ -216,7 +216,7 @@ class NB:
         self.log_class_priors = {}
         self.vocab = set()
         self.labels = set()
-        self.word_counts = collections.defualtdict(lambda: collections.Counter())
+        self.word_counts = collections.defaultdict(lambda: collections.Counter())
 
     def clean(self, s):
         translator = str.maketrans("", "", string.punctuation)
